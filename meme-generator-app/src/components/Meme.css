@@ -1,0 +1,152 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  background-color: rgb(182, 181, 181);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.app-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  border: 2px solid blueviolet;
+  border-radius: 15px;
+  width: 600px;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgb(121, 26, 165),
+    rgb(126, 28, 172),
+    rgb(156, 20, 219)
+  );
+  min-height: 60px;
+  border-bottom: 2px solid gray;
+  box-shadow: 0px 1px 2px 2px rgba(56, 49, 49, 0.267);
+
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  /* padding: 5px; */
+}
+
+.image-container {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+.logo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-section {
+  display: flex;
+
+  gap: 10px;
+}
+
+.input-section-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.input-for-meme {
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+}
+
+.input-btn {
+  height: 35px;
+  border: 1px solid violet;
+  border-radius: 5px;
+  background: linear-gradient(
+    135deg,
+    rgb(121, 26, 165),
+    rgb(126, 28, 172),
+    rgb(156, 20, 219)
+  );
+  color: white;
+}
+
+.meme-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.meme-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.bottom-heading,
+.top-heading {
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top-heading {
+  top: 0;
+}
+.bottom-heading {
+  bottom: 0;
+}

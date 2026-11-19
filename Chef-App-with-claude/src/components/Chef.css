@@ -1,0 +1,168 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*BODY*/
+
+body {
+  background-color: rgb(245, 243, 243);
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*APP CONTAINER*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 10px 10px 0 0;
+  /* padding: 5px; */
+  min-height: 100vh;
+}
+
+/*HEADER MAIN FOOTER COMMON*/
+header,
+.main-container {
+  min-width: 600px;
+}
+
+/*  HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.233);
+  padding: 10px;
+  min-height: 80px;
+  min-width: 100%;
+  margin-bottom: 5px;
+}
+
+.image-container {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.headerImage {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+}
+
+/*MAIN CONTAINER*/
+
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.form-container {
+  align-self: center;
+  display: flex;
+  gap: 5px;
+  margin-left: 3rem;
+}
+
+.ingredient-input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  width: 300px;
+  min-height: 30px;
+}
+
+.ingredient-btn {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  min-height: 20px;
+  background-color: rgb(105, 150, 233);
+}
+
+.ingredient-list-section {
+  margin: 1rem 0 0 10px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(-100px);
+}
+
+.ingredient-list {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.getRecipe-container {
+  margin-top: 2rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 80px;
+  width: 80%;
+}
+
+.summery-for-getRecipe {
+  text-wrap: wrap;
+  width: 75%;
+}
+
+.summery-for-getRecipe h2 {
+  margin-bottom: 7px;
+}
+
+.getRecipe-btn {
+  border: 1px solid orange;
+  border-radius: 10px;
+  background-color: rgb(248, 143, 74);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.192);
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 55px;
+  max-height: 60px;
+}
+
+.markdownRecipe-container {
+  padding: 10px;
+}
+
+.markdownRecipe-container ul,
+ol {
+  list-style-type: dot;
+  padding: 10px;
+  gap: 4px;
+  line-height: 20px;
+}
+
+.markdownRecipe-container h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
